@@ -1,0 +1,62 @@
+===Como configurar git===
+
+1. git config --global user.name "Edgar Bravo"
+
+2. git config --global user.email "Edgar Bravo"
+
+3. git config --global color.ui true
+
+==Nuevo repositorio==
+
+git init = creando nuevo repositorio
+
+git status = es para ver el estado
+
+git add "index.html" = mandar al stage in index
+
+git commit -m "especificando el cambio que hicimos en la nueva version"
+
+==ignorar archivos==
+
+crear un archivo (.gitignore)
+_ejemplo_
+*psd
+contacto.html
+
+
+
+==como ver commits previos==
+
+git log
+
+git log --stat = git log pero con estadisticas 
+
+git log --oneline = git log pero en una linea
+
+git log --graph  = git log con grafica
+
+git log --oneline -graph --all = ejecutar todo
+
+
+
+==comparar y ver que se a agregado==
+
+git diff
+
+git diff (ID de archivo) index.html = comparar
+
+==regrasar a commit anterior==
+git checkout (ID del archivo)
+
+
+
+
+===RAMAS BRANCHES===
+
+git branch == observar nuestras ramas
+
+git checkout -b (nombre de la rama ) = nueva rama 
+
+git checkout (rama) = para cambiar de rama
+
+git merge (rama que volver al master)
